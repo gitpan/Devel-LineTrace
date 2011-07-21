@@ -2,11 +2,16 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-          'NAME' => 'Devel::LineTrace',
-          'VERSION_FROM' => 'lib/Devel/LineTrace.pm',
-          'PREREQ_PM' => {},
-          'INSTALLDIRS' => 'site',
-          'EXE_FILES' => [],
-          'PL_FILES' => {}
-        )
+  'PL_FILES' => {},
+  'INSTALLDIRS' => 'site',
+  'NAME' => 'Devel::LineTrace',
+  'EXE_FILES' => [],
+  'VERSION_FROM' => 'lib/Devel/LineTrace.pm',
+  'PREREQ_PM' => {
+                   'warnings' => 0,
+                   'strict' => 0,
+                   'Test::More' => 0,
+                   'vars' => 0
+                 }
+)
 ;
