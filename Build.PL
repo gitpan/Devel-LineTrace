@@ -17,6 +17,7 @@ my $build = Test::Run::Builder->new(
     },
     requires =>
     {
+        'perl' => '5.006',
         'strict' => 0,
         'vars' => 0,
         'warnings' => 0,
@@ -31,7 +32,7 @@ my $build = Test::Run::Builder->new(
     {
         resources =>
         {
-            repository => "http://svn.berlios.de/svnroot/repos/web-cpan/Devel-LineTrace/",
+            repository => "https://bitbucket.org/shlomif/perl-devel-linetrace",
         },
         keywords =>
         [
